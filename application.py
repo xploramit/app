@@ -6,7 +6,7 @@ import numpy as np
 
 app=Flask(__name__)
 cors=CORS(app)
-model=pickle.load(open('LinearRegressionModel.pkl','rb'))
+model=pickle.load(open('ExtraTreesRegressorModel.pkl','rb'))
 car=pd.read_csv('Cleaned_Car_data.csv')
 
 @app.route('/',methods=['GET','POST'])
